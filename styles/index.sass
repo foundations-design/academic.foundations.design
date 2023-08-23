@@ -27,7 +27,7 @@ body
 hgroup
    text-align: center
    margin-top: 0
-   margin-bottom: var(--space-sm)
+   margin-bottom: var(--space-lg)
 
    h1
       color: var(--color-t-h)
@@ -48,8 +48,15 @@ h1, h2
    text-transform: uppercase
 
 body
-   max-width: 600px
-   margin: var(--space-xl) auto
+   margin-top: var(--space-xl)
+   margin-bottom: var(--space-xl)
+   display: grid
+   place-content: center
+   padding-left: var(--space-sm)
+   padding-right: var(--space-sm)
+
+   *
+      max-width: 600px
 
 section
    margin-bottom: var(--space-sm)
@@ -72,12 +79,15 @@ section
    .item
       margin-bottom: var(--space-sm)
       display: grid
+      border-radius: 2px
       grid-template-columns: 5fr 1fr
       border: 1px solid var(--color-t-c)
       padding: var(--space-xs)
       gap: var(--space-2xs) var(--space-sm)
-      margin-left: var(--space-md)
-      margin-right: var(--space-md)
+
+      @include md
+         margin-left: var(--space-md)
+         margin-right: var(--space-md)
 
    .price
       place-self: center
@@ -105,3 +115,11 @@ section
 hr
    margin-top: var(--space-md)
    margin-bottom: var(--space-md)
+
+.faq
+   h2
+      margin-bottom: var(--space-xs)
+   h3
+      margin-bottom: var(--space-xs)
+   li
+      margin-bottom: var(--space-xs)
