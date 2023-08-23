@@ -31,11 +31,13 @@ hgroup
 
    h1
       color: var(--color-t-h)
-      font-size: var(--d-2xl)
+      font-size: var(--d-3xl)
       margin-bottom: calc(-1* var(--space-2xs))
 
       &::before, &::after
-         content: "-"
+         content: " - "
+         color: var(--color-t-c)
+         weight: 300
 
    p
       color: var(--color-t-h)
@@ -57,3 +59,11 @@ section
 
 .packages .item
    margin-bottom: var(--space-sm)
+   display: grid
+   grid-template-columns: 5fr 1fr
+
+   h3
+      grid-column: 1 / -1
+
+.tagline
+   font-size: var(--d-lg)
