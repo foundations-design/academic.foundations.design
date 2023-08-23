@@ -54,16 +54,54 @@ body
 section
    margin-bottom: var(--space-sm)
 
-.content p
-   margin-bottom: var(--space-xs)
+.content
+   h2
+      margin-top: var(--space-md)
 
-.packages .item
-   margin-bottom: var(--space-sm)
-   display: grid
-   grid-template-columns: 5fr 1fr
+   p
+      margin-bottom: var(--space-xs)
+
+.packages
+   h2
+      margin-bottom: var(--space-xs)
 
    h3
+      font-size: var(--d-lg)
       grid-column: 1 / -1
+
+   .item
+      margin-bottom: var(--space-sm)
+      display: grid
+      grid-template-columns: 5fr 1fr
+      border: 1px solid var(--color-t-c)
+      padding: var(--space-xs)
+      gap: var(--space-2xs) var(--space-sm)
+      margin-left: var(--space-md)
+      margin-right: var(--space-md)
+
+   .price
+      place-self: center
+      text-align: right
+
+      *
+         font-family: var(--font-secondary)
+         line-height: 1
+
+      .p
+         font-size: var(--d-2xl)
 
 .tagline
    font-size: var(--d-lg)
+
+.video-container
+
+   video
+      border-radius: 5px
+      margin-left: auto
+      margin-right: auto
+      margin-top: var(--space-md)
+      margin-bottom: var(--space-md)
+
+hr
+   margin-top: var(--space-md)
+   margin-bottom: var(--space-md)
